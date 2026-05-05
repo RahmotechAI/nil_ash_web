@@ -1,6 +1,6 @@
 /* ─── FAQ Categories ─────────────────────────────────────── */
 .faq-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .faq-section .section-header {
@@ -49,7 +49,7 @@
   text-align: left;
   background: none;
   border: none;
-  color: var(--white);
+  color: var(--black);
   gap: 1rem;
   user-select: none;
 }

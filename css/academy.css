@@ -71,7 +71,7 @@
 
 /* ─── Academy Intro ──────────────────────────────────────── */
 .academy-intro {
-  background: var(--black);
+  background: var(--white);
 }
 
 .academy-intro-grid {
@@ -104,7 +104,7 @@
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 1.05rem;
-  color: var(--cream);
+  color: var(--black);
 }
 
 .academy-intro-img {
@@ -168,7 +168,7 @@
 
 /* ─── Upcoming Classes ───────────────────────────────────── */
 .classes-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .classes-section .section-header {
@@ -236,7 +236,7 @@
 
 .class-name {
   font-weight: 400;
-  color: var(--white);
+  color: var(--black);
 }
 
 .availability-badge {
@@ -346,13 +346,14 @@
 .academy-page-cta h2 {
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   margin-bottom: 0.75rem;
+  color: var(--white);
 }
 
 .academy-page-cta p {
   max-width: 500px;
   margin: 0 auto 2.5rem;
   font-size: 0.85rem;
-  color: rgba(26, 26, 26, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .academy-page-cta .btn-row {

@@ -1,6 +1,6 @@
 /* ─── Services Table ─────────────────────────────────────── */
 .services-table-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .services-table-section h2 {
@@ -62,7 +62,7 @@
 
 .service-name-cell {
   font-weight: 400;
-  color: var(--white);
+  color: var(--black);
 }
 
 .price-cell {
@@ -90,7 +90,7 @@
 }
 
 .badge-temporary {
-  color: var(--cream);
+  color: var(--black);
   border-color: rgba(26, 26, 26, 0.2);
 }
 
@@ -125,7 +125,7 @@
   color: rgba(26, 26, 26, 0.8);
 }
 
-.services-table-mobile .service-name-cell { font-weight: 400; color: var(--white); }
+.services-table-mobile .service-name-cell { font-weight: 400; color: var(--black); }
 .services-table-mobile .price-cell { color: var(--gold); }
 
 /* ─── Featured Service Cards ─────────────────────────────── */
@@ -236,13 +236,14 @@
 .not-sure-cta h2 {
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   margin-bottom: 0.75rem;
+  color: var(--white);
 }
 
 .not-sure-cta p {
   max-width: 480px;
   margin: 0 auto 2rem;
   font-size: 0.85rem;
-  color: rgba(26, 26, 26, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 /* ─── Responsive ─────────────────────────────────────────── */

@@ -1,6 +1,6 @@
 /* ─── Contact Layout ─────────────────────────────────────── */
 .contact-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .contact-grid {
@@ -117,7 +117,7 @@
 
 /* ─── Hours ──────────────────────────────────────────────── */
 .hours-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .hours-grid {
@@ -182,7 +182,7 @@
 
 /* ─── Map ────────────────────────────────────────────────── */
 .map-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .map-container {
@@ -252,7 +252,7 @@
   width: 100%;
   background: rgba(26, 26, 26, 0.04);
   border: 1px solid rgba(201, 169, 110, 0.2);
-  color: var(--white);
+  color: var(--black);
   font-family: 'DM Sans', sans-serif;
   font-size: 0.82rem;
   font-weight: 300;
@@ -285,7 +285,7 @@
 
 .form-group select option {
   background: var(--brown);
-  color: var(--white);
+  color: var(--black);
 }
 
 .form-group textarea {

@@ -1,6 +1,6 @@
 /* ─── Story Section ──────────────────────────────────────── */
 .story-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .story-grid {
@@ -57,7 +57,7 @@
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 1.1rem;
-  color: var(--cream);
+  color: var(--black);
   margin-bottom: 0.5rem;
 }
 
@@ -122,7 +122,7 @@
 
 /* ─── Team Section ───────────────────────────────────────── */
 .team-section {
-  background: var(--black);
+  background: var(--white);
 }
 
 .team-section .section-header {
