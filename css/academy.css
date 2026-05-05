@@ -1,0 +1,382 @@
+/* ─── Academy Full Hero ──────────────────────────────────── */
+.academy-hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.academy-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://picsum.photos/seed/academy-hero/1920/1080');
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.04);
+  animation: heroZoom 10s ease forwards;
+}
+
+@keyframes heroZoom {
+  to { transform: scale(1); }
+}
+
+.academy-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.academy-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 1.5rem;
+  max-width: 800px;
+}
+
+.academy-hero-content .section-eyebrow {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease 0.4s forwards;
+}
+
+.academy-hero-content h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease 0.7s forwards;
+  color: var(--white);
+}
+
+.academy-hero-sub {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--gold-light);
+  margin-top: 1rem;
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease 1.0s forwards;
+  display: block;
+}
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Academy Intro ──────────────────────────────────────── */
+.academy-intro {
+  background: var(--black);
+}
+
+.academy-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.academy-intro-text .section-eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.academy-intro-text h2 {
+  margin-bottom: 1.25rem;
+}
+
+.academy-intro-text p {
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: rgba(26, 26, 26, 0.6);
+  margin-bottom: 1.25rem;
+}
+
+.academy-intro-text .gatekeeping-quote {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  border-left: 2px solid var(--gold);
+  background: rgba(201, 169, 110, 0.05);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--cream);
+}
+
+.academy-intro-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── Training Formats ───────────────────────────────────── */
+.training-section {
+  background: var(--brown);
+}
+
+.training-section .section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.training-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.training-card {
+  background: rgba(26, 26, 26, 0.04);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: border-color 0.35s ease, transform 0.35s ease;
+}
+
+.training-card:hover {
+  border-color: rgba(201, 169, 110, 0.35);
+  transform: translateY(-5px);
+}
+
+.training-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.training-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.training-card p {
+  font-size: 0.8rem;
+  color: rgba(26, 26, 26, 0.55);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+
+.training-card .btn {
+  font-size: 0.6rem;
+  padding: 0.7em 1.5em;
+}
+
+/* ─── Upcoming Classes ───────────────────────────────────── */
+.classes-section {
+  background: var(--black);
+}
+
+.classes-section .section-header {
+  margin-bottom: 3rem;
+}
+
+.classes-table-wrapper {
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  overflow-x: auto;
+}
+
+.classes-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.classes-table thead tr {
+  background: var(--brown);
+}
+
+.classes-table th {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 1.1rem 1.5rem;
+  text-align: left;
+}
+
+.classes-table td {
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.08);
+  vertical-align: middle;
+  font-size: 0.8rem;
+  color: rgba(26, 26, 26, 0.8);
+}
+
+.classes-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.classes-table tbody tr:hover td {
+  background: rgba(201, 169, 110, 0.03);
+}
+
+.class-date {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.class-date-month {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.class-name {
+  font-weight: 400;
+  color: var(--white);
+}
+
+.availability-badge {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3em 0.8em;
+  border: 1px solid currentColor;
+}
+
+.badge-open    { color: var(--gold); border-color: rgba(201,169,110,0.5); }
+.badge-limited { color: #d4a017; border-color: rgba(212,160,23,0.5); }
+.badge-full    { color: var(--muted); border-color: rgba(107,107,107,0.4); }
+.badge-past    { color: rgba(107,107,107,0.5); border-color: rgba(107,107,107,0.25); font-style: italic; }
+
+.class-signup-link {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: color 0.25s ease;
+}
+
+.class-signup-link:hover { color: var(--gold-light); }
+
+.class-signup-link.disabled {
+  color: var(--muted);
+  pointer-events: none;
+}
+
+/* ─── Instructor ─────────────────────────────────────────── */
+.instructor-section {
+  background: var(--brown);
+}
+
+.instructor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.instructor-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.instructor-text .section-eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.instructor-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.instructor-text p {
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: rgba(26, 26, 26, 0.6);
+  margin-bottom: 1.25rem;
+}
+
+.instructor-credentials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(201, 169, 110, 0.15);
+}
+
+.credential-item {
+  text-align: center;
+}
+
+.credential-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.credential-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ─── Academy CTA ────────────────────────────────────────── */
+.academy-page-cta {
+  background: var(--black);
+  text-align: center;
+  border-top: 1px solid rgba(201, 169, 110, 0.08);
+}
+
+.academy-page-cta h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  margin-bottom: 0.75rem;
+}
+
+.academy-page-cta p {
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  font-size: 0.85rem;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.academy-page-cta .btn-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .academy-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .training-cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .instructor-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

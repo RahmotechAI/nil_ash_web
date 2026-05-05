@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Consultation | Nilash Studio</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/consultation.css" />
+  <link rel="stylesheet" href="css/faqs.css" />
+</head>
+<body>
+
+  <div class="mobile-overlay"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="academy.html">Academy</a>
+    <a href="faqs.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="consultation.html" class="btn btn-primary btn-pill mobile-book-btn active">Book Now</a>
+  </nav>
+
+  <header class="site-header">
+    <div class="nav-utility">
+      <div class="container nav-utility-inner">
+        <a href="contact.html">Contact</a>
+        <a href="#">Shop</a>
+        <a href="academy.html">Academy</a>
+      </div>
+    </div>
+    <nav class="nav-main" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <ul class="nav-links nav-left">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+        <a href="index.html" class="logo-crest" aria-label="Nilash Studio home">
+          <div class="logo-crest-border">
+            <span class="logo-name">Nilash</span>
+          </div>
+          <span class="logo-tagline">Permanent Beauty Studio</span>
+        </a>
+        <ul class="nav-links nav-right">
+          <li><a href="about.html">About</a></li>
+          <li><a href="consultation.html" class="btn btn-primary btn-pill nav-book">Book</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── Page Hero ─────────────────────────────────────── -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('https://picsum.photos/seed/consult-hero/1920/800');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <span class="page-hero-eyebrow">Free &amp; No Obligation</span>
+        <h1>Virtual Consultation</h1>
+      </div>
+    </section>
+
+    <!-- ─── How It Works ──────────────────────────────────── -->
+    <section class="process-section section-pad" id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Simple Process</span>
+          <h2>How It Works</h2>
+        </div>
+        <div class="process-steps stagger">
+          <div class="process-step reveal">
+            <div class="step-number">01</div>
+            <h3>Fill Out the Form</h3>
+            <p>Tell us about yourself, which treatment you're interested in, and upload a photo if you have one handy.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">02</div>
+            <h3>Send Us Photos</h3>
+            <p>Natural light, no makeup, straight-on angle. We review your photos to give you the most accurate recommendation possible.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">03</div>
+            <h3>Get Your Recommendation</h3>
+            <p>Within 24 hours, we'll send you a personalized recommendation, pricing details, and a link to book your appointment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Photo Tips ────────────────────────────────────── -->
+    <section class="photo-tips section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Photo Guidance</span>
+          <h2>Tips for Your Photos</h2>
+        </div>
+        <div class="tips-grid stagger">
+          <div class="tip-card reveal">
+            <span class="tip-icon">✕</span>
+            <h4>No Makeup</h4>
+            <p>A clean face helps us see your natural features, skin tone, and any existing brow hair we'll be working with.</p>
+          </div>
+          <div class="tip-card reveal">
+            <span class="tip-icon">☀</span>
+            <h4>Natural Light</h4>
+            <p>Step near a window or go outside. Artificial lighting distorts skin tone and makes it harder to assess results.</p>
+          </div>
+          <div class="tip-card reveal">
+            <span class="tip-icon">◎</span>
+            <h4>Straight-On Angle</h4>
+            <p>Face the camera directly, chin level, eyes open. This gives us the clearest view of your facial symmetry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Consultation Form ─────────────────────────────── -->
+    <section class="form-section section-pad" id="booking">
+      <div class="container">
+        <div class="consultation-form-layout">
+          <div class="form-main">
+            <span class="section-eyebrow reveal">Start Here</span>
+            <h2 class="reveal" style="margin-bottom:2.5rem;">Request Your<br>Free Consultation</h2>
+
+            <div class="form-success" role="alert">
+              <span class="success-icon">✦</span>
+              <h3>Thank You!</h3>
+              <p>We've received your consultation request and will be in touch within 24 hours.</p>
+              <a href="services.html" class="btn btn-gold-outline">Explore Our Services</a>
+            </div>
+
+            <form class="validated-form" novalidate>
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required data-error="Please enter your name." />
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required data-error="Please enter your email." />
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(813) 555-0000" />
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Interested In</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a treatment</option>
+                  <option value="brows">Brows (Nano / Hybrid / Lamination)</option>
+                  <option value="lips">Lip Blush</option>
+                  <option value="eyes">Permanent Eyeliner</option>
+                  <option value="removal">PMU Removal / Correction</option>
+                  <option value="notsure">Not Sure Yet</option>
+                </select>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell Us More (Optional)</label>
+                <textarea id="message" name="message" placeholder="Any questions, concerns, or existing PMU we should know about..."></textarea>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label>Upload a Photo (Optional)</label>
+                <div class="file-input-wrapper">
+                  <input type="file" id="photo" name="photo" accept="image/*" aria-label="Upload photo" />
+                  <div class="file-input-label">
+                    <span class="file-icon">📎</span>
+                    <span>Click to upload or drag &amp; drop your photo here</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="consent-group">
+                <label class="consent-label">
+                  <input type="checkbox" name="sms-consent" />
+                  <span class="consent-text">By submitting this form, I consent to receive SMS messages from Nilash Studio regarding my consultation and appointment. Message and data rates may apply. Reply STOP to opt out at any time.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Request Consultation</button>
+            </form>
+          </div>
+
+          <div class="form-aside reveal">
+            <h3>What to Expect</h3>
+            <p>Our virtual consultations are completely free and carry no obligation to book. We simply want to help you make the right decision for your face, your skin, and your lifestyle.</p>
+            <ul class="form-aside-list">
+              <li>Personalized treatment recommendation</li>
+              <li>Honest feedback about what will and won't work</li>
+              <li>Pricing transparency — no surprise fees</li>
+              <li>Response within 24 hours</li>
+            </ul>
+            <a href="faqs.html" class="btn btn-gold-outline" style="font-size:0.62rem;padding:0.8em 1.8em;">View FAQ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Inline FAQ ────────────────────────────────────── -->
+    <section class="inline-faq section-pad">
+      <div class="container" style="max-width: 760px;">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Common Questions</span>
+          <h2>Before You Book</h2>
+        </div>
+
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What does the virtual consultation cost?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Completely free — no credit card, no commitment. The consultation exists so we can understand your goals and recommend the right treatment before you spend a cent.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How fast will you respond?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Within 24 hours on business days. We review every submission personally, so your recommendation is always tailored — never automated.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can I book an appointment directly?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Yes. <a href="contact.html" style="color:var(--gold);">Contact us directly</a> by phone or email and we'll book you in. The consultation form is preferred for new clients so we can get to know your goals first.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What if I don't know which treatment I want?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>That's exactly what the consultation is for. Select "Not Sure Yet" in the form, describe your goals, and we'll guide you to the right treatment based on your skin type, lifestyle, and what you're hoping to achieve.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-crest" aria-label="Nilash Studio">
+            <div class="logo-crest-border">
+              <span class="logo-name">Nilash</span>
+            </div>
+          </a>
+          <p>A luxury permanent makeup studio dedicated to enhancing your natural beauty with precision, artistry, and care.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faqs.html">FAQ</a></li>
+            <li><a href="#">Pre &amp; Aftercare</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p style="font-style:italic; margin-bottom:0.75rem; font-size:0.75rem;">By Appointment Only</p>
+          <div class="footer-hours-row"><span>Monday–Friday</span><span>10:00–20:00</span></div>
+          <div class="footer-hours-row"><span>Saturday</span><span>10:00–18:00</span></div>
+          <div class="footer-hours-row"><span>Sunday</span><span>Closed</span></div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>123 Beauty Lane, Suite 4<br>Tampa, FL 33602</p>
+          <p><a href="tel:+18135550100">(813) 555-0100</a></p>
+          <p><a href="mailto:hello@nilashstudio.com">hello@nilashstudio.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;width:100%;">
+        <p>&copy; 2026 Nilash Studio. All rights reserved.</p>
+        <div class="footer-policy-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/accordion.js" defer></script>
+</body>
+</html>

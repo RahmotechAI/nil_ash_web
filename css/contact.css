@@ -1,0 +1,319 @@
+/* ─── Contact Layout ─────────────────────────────────────── */
+.contact-section {
+  background: var(--black);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* Contact info */
+.contact-info .section-eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.contact-info h2 {
+  margin-bottom: 2.5rem;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.contact-info-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.contact-info-icon {
+  font-size: 1.2rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  flex-shrink: 0;
+}
+
+.contact-info-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.contact-info-value {
+  font-size: 0.85rem;
+  color: rgba(26, 26, 26, 0.7);
+  line-height: 1.7;
+}
+
+.contact-info-value a {
+  color: rgba(26, 26, 26, 0.7);
+  transition: color 0.25s ease;
+}
+
+.contact-info-value a:hover {
+  color: var(--gold);
+}
+
+/* ─── Contact Form ───────────────────────────────────────── */
+.contact-form-section {
+  background: var(--brown);
+}
+
+.contact-form-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.contact-form-text .section-eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.contact-form-text h2 {
+  margin-bottom: 1.25rem;
+}
+
+.contact-form-text p {
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: rgba(26, 26, 26, 0.55);
+}
+
+/* Form shared with consultation.css — only contact-specific overrides here */
+.contact-form-col .form-group {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form-col .form-group input,
+.contact-form-col .form-group textarea,
+.contact-form-col .form-group select {
+  background: rgba(26, 26, 26, 0.04);
+  border-color: rgba(201, 169, 110, 0.15);
+}
+
+.contact-form-col .form-group input:focus,
+.contact-form-col .form-group textarea:focus,
+.contact-form-col .form-group select:focus {
+  background: rgba(26, 26, 26, 0.04);
+  border-color: var(--gold);
+}
+
+/* ─── Hours ──────────────────────────────────────────────── */
+.hours-section {
+  background: var(--black);
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.hours-section .section-eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.hours-table-wrap h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours-table tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.hours-table tr:last-child {
+  border-bottom: none;
+}
+
+.hours-table .day-col {
+  font-size: 0.8rem;
+  color: rgba(26, 26, 26, 0.7);
+}
+
+.hours-table .time-col {
+  font-size: 0.8rem;
+  color: var(--gold);
+}
+
+.hours-note {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  background: rgba(201, 169, 110, 0.04);
+}
+
+.hours-note p {
+  font-size: 0.78rem;
+  color: rgba(26, 26, 26, 0.55);
+  line-height: 1.8;
+}
+
+.hours-note p strong {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+/* ─── Map ────────────────────────────────────────────────── */
+.map-section {
+  background: var(--black);
+}
+
+.map-container {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  filter: grayscale(0.8) sepia(0.15) contrast(1.05) brightness(0.85);
+  transition: filter 0.5s ease;
+}
+
+.map-container:hover {
+  filter: none;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ─── Form success ───────────────────────────────────────── */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.success-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.form-success h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.form-success p {
+  font-size: 0.82rem;
+  color: rgba(26, 26, 26, 0.55);
+  max-width: 360px;
+  margin: 0 auto 2rem;
+}
+
+/* Shared form label/input (since contact doesn't link consultation.css) */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  background: rgba(26, 26, 26, 0.04);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 300;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.25s ease, background 0.25s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(107, 107, 107, 0.5);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--gold);
+  background: rgba(201, 169, 110, 0.04);
+}
+
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9a96e' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-group select option {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-group.error input,
+.form-group.error textarea,
+.form-group.error select {
+  border-color: #c0392b;
+}
+
+.error-msg {
+  font-size: 0.68rem;
+  color: #e74c3c;
+  margin-top: 0.35rem;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 1em;
+  display: block;
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .contact-grid,
+  .contact-form-layout,
+  .hours-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

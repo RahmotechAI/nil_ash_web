@@ -1,0 +1,185 @@
+/* ─── Filter Tabs ────────────────────────────────────────── */
+.portfolio-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.filter-tab {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.65em 1.75em;
+  border: 1px solid rgba(107, 107, 107, 0.4);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-tab:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.filter-tab.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201, 169, 110, 0.08);
+}
+
+/* ─── Masonry Grid ───────────────────────────────────────── */
+.masonry-grid {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.masonry-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.04);
+}
+
+.masonry-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 1rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+}
+
+.masonry-item:hover .masonry-item-overlay {
+  transform: translateY(0);
+}
+
+.masonry-item-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+/* ─── Lightbox ───────────────────────────────────────────── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.97);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#lightbox-img {
+  max-width: 88vw;
+  max-height: 85vh;
+  object-fit: contain;
+  transition: opacity 0.18s ease;
+  display: block;
+}
+
+.lightbox-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  color: var(--gold);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  z-index: 1;
+}
+
+.lightbox-btn:hover {
+  color: var(--gold-light);
+  transform: scale(1.1);
+}
+
+#lightbox-close {
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1;
+}
+
+#lightbox-prev {
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+#lightbox-prev:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+#lightbox-next {
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+#lightbox-next:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ─── Portfolio CTA ──────────────────────────────────────── */
+.portfolio-cta {
+  background: var(--brown);
+  text-align: center;
+}
+
+.portfolio-cta h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-cta p {
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  font-size: 0.85rem;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .masonry-grid { column-count: 2; }
+}
+
+@media (max-width: 560px) {
+  .masonry-grid { column-count: 1; }
+
+  #lightbox-prev { left: 0.75rem; }
+  #lightbox-next { right: 0.75rem; }
+}
